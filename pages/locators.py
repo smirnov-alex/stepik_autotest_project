@@ -33,4 +33,3 @@ class ProductPageLocators:
 class BasketPageLocators:
     TEXT_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner p")
     BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
-

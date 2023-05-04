@@ -9,5 +9,5 @@ class BasketPage(BasePage):
 
     def should_be_text_empty_basket(self):
         text = 'Your basket is empty'
-        paragraph = self.browser.find_element(*BasketPageLocators.TEXT_EMPTY_BASKET)
-        assert text in paragraph.text, f'Page not content information about empty basket'
+        message_text = self.browser.find_element(*BasketPageLocators.TEXT_EMPTY_BASKET)
+        assert text in message_text.text, f'Page not content information about empty basket'
